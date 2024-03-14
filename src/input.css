@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Angkor&family=Dancing+Script:wght@400..700&family=Teko:wght@300..700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Teko", sans-serif;
+}
+.logo {
+  font-family: "Dancing Script", cursive;
+}
+header {
+  clip-path: polygon(50% 0%, 100% 0, 100% 60%, 100% 100%, 51% 91%, 0 100%, 0 0);
+}
+@layer components {
+  .btn-primary {
+  }
+}

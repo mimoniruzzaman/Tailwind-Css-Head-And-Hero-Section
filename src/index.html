@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Tailwind Css</title>
+  </head>
+  <body>
+    <header class="bg-gray-800">
+      <nav class="container mx-auto px-6 py-3">
+        <div class="flex items-center justify-between">
+          <div class="text-white font-bold text-xl">
+            <a href="#">Logo</a>
+          </div>
+          <div class="hidden md:block">
+            <ul class="flex items-center space-x-8">
+              <li><a href="#" class="text-white">Home</a></li>
+              <li><a href="#" class="text-white">About</a></li>
+              <li><a href="#" class="text-white">Services</a></li>
+              <li><a href="#" class="text-white">Contact</a></li>
+            </ul>
+          </div>
+          <div class="md:hidden">
+            <button class="outline-none mobile-menu-button">
+              <svg
+                class="w-6 h-6 text-white"
+                x-show="!showMenu"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="mobile-menu hidden md:hidden">
+          <ul class="mt-4 space-y-4">
+            <li>
+              <a href="#" class="block px-4 py-2 text-white bg-gray-900 rounded"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 text-white bg-gray-900 rounded"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 text-white bg-gray-900 rounded"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 text-white bg-gray-900 rounded"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Hero Sectoin -->
+      <section>
+        <div class="hero-content">
+          <h1
+            class="text-4xl text-white bg-primaryColor py-5 text-center text-secondary font-semibold"
+          >
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          </h1>
+          <p class="bg-headingColor py-4">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non odio
+            dolorum exercitationem ullam doloremque! Autem, architecto? Dolor,
+            tempora cum non illo, vero fuga quasi quisquam suscipit hic
+            repellat, ut rerum doloremque voluptatibus ullam magnam eligendi
+            deleniti omnis ad repudiandae quis ipsum? Numquam ullam aliquid eos
+            voluptates neque accusantium dolor laborum.
+          </p>
+        </div>
+      </section>
+
+      <!-- Acordeyan -->
+      <section>
+        <div class="m-2 space-y-2">
+          <div
+            class="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white"
+            tabindex="1"
+          >
+            <div class="flex cursor-pointer items-center justify-between">
+              <span> HTML </span>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
+                class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180"
+              />
+            </div>
+            <div
+              class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </div>
+          </div>
+
+          <div
+            class="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white"
+            tabindex="2"
+          >
+            <div class="flex cursor-pointer items-center justify-between">
+              <span> CSS </span>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
+                class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180"
+              />
+            </div>
+            <div
+              class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </div>
+          </div>
+
+          <div
+            class="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white"
+            tabindex="3"
+          >
+            <div class="flex cursor-pointer items-center justify-between">
+              <span> JAVASCRIPT </span>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
+                class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180"
+              />
+            </div>
+            <div
+              class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Form -->
+      <form>
+        <div
+          class="bg-black text-white flex min-h-10 max-w-96 m-auto flex-col items-center pt-16 sm:justify-center sm:pt-0"
+        >
+          <a href="#">
+            <div
+              class="text-foreground font-semibold text-2xl tracking-tighter mx-auto flex items-center gap-2"
+            >
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672Zm-7.518-.267A8.25 8.25 0 1 1 20.25 10.5M8.288 14.212A5.25 5.25 0 1 1 17.25 10.5"
+                  />
+                </svg>
+              </div>
+              Ardiansyah Putra
+            </div>
+          </a>
+          <div class="relative mt-12 w-full max-w-lg sm:mt-10">
+            <div
+              class="relative -mb-px h-px w-full bg-gradient-to-r from-transparent via-sky-300 to-transparent"
+              bis_skin_checked="1"
+            ></div>
+            <div
+              class="mx-5 border dark:border-b-white/50 dark:border-t-white/50 border-b-white/20 sm:border-t-white/20 shadow-[20px_0_20px_20px] shadow-slate-500/10 dark:shadow-white/20 rounded-lg border-white/20 border-l-white/20 border-r-white/20 sm:shadow-sm lg:rounded-xl lg:shadow-none"
+            >
+              <div class="flex flex-col p-6">
+                <h3 class="text-xl font-semibold leading-6 tracking-tighter">
+                  Login
+                </h3>
+                <p class="mt-1.5 text-sm font-medium text-white/50">
+                  Welcome back, enter your credentials to continue.
+                </p>
+              </div>
+              <div class="p-6 pt-0">
+                <form>
+                  <div>
+                    <div>
+                      <div
+                        class="group relative rounded-lg border focus-within:border-sky-200 px-3 pb-1.5 pt-2.5 duration-200 focus-within:ring focus-within:ring-sky-300/30"
+                      >
+                        <div class="flex justify-between">
+                          <label
+                            class="text-xs font-medium text-muted-foreground group-focus-within:text-white text-gray-400"
+                            >Username</label
+                          >
+                          <div
+                            class="absolute right-3 translate-y-2 text-green-200"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              fill="currentColor"
+                              class="w-6 h-6"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                                clip-rule="evenodd"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                        <input
+                          type="text"
+                          name="username"
+                          placeholder="Username"
+                          autocomplete="off"
+                          class="block w-full border-0 bg-transparent p-0 text-sm file:my-1 file:rounded-full file:border-0 file:bg-accent file:px-4 file:py-2 file:font-medium placeholder:text-muted-foreground/90 focus:outline-none focus:ring-0 sm:leading-7 text-foreground"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-4">
+                    <div>
+                      <div
+                        class="group relative rounded-lg border focus-within:border-sky-200 px-3 pb-1.5 pt-2.5 duration-200 focus-within:ring focus-within:ring-sky-300/30"
+                      >
+                        <div class="flex justify-between">
+                          <label
+                            class="text-xs font-medium text-muted-foreground group-focus-within:text-white text-gray-400"
+                            >Password</label
+                          >
+                        </div>
+                        <div class="flex items-center">
+                          <input
+                            type="password"
+                            name="password"
+                            class="block w-full border-0 bg-transparent p-0 text-sm file:my-1 placeholder:text-muted-foreground/90 focus:outline-none focus:ring-0 focus:ring-teal-500 sm:leading-7 text-foreground"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-4 flex items-center justify-between">
+                    <label class="flex items-center gap-2">
+                      <input
+                        type="checkbox"
+                        name="remember"
+                        class="outline-none focus:outline focus:outline-sky-300"
+                      />
+                      <span class="text-xs">Remember me</span>
+                    </label>
+                    <a
+                      class="text-sm font-medium text-foreground underline"
+                      href="/forgot-password"
+                      >Forgot password?</a
+                    >
+                  </div>
+                  <div class="mt-4 flex items-center justify-end gap-x-2">
+                    <a
+                      class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:ring hover:ring-white h-10 px-4 py-2 duration-200"
+                      href="/register"
+                      >Register</a
+                    >
+                    <button
+                      class="font-semibold hover:bg-black hover:text-white hover:ring hover:ring-white transition duration-300 inline-flex items-center justify-center rounded-md text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-white text-black h-10 px-4 py-2"
+                      type="submit"
+                    >
+                      Log in
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </main>
+    <footer></footer>
+  </body>
+</html>
